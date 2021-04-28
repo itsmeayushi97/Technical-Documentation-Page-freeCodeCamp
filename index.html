@@ -1,0 +1,448 @@
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<div class="container-fluid">
+ <head>
+  <title>Responsive Web Design Projects - Build a Technical Documentation Page</title>
+</head> 
+   <body>
+            <nav id="navbar">   
+       <header>
+         <h1>C++ Documentation</h1>
+        </header>
+             <ol id="nav-list">
+      <a href="#Introduction" class="nav-link"><li>Introduction</li></a>  
+               
+   <a href="#What_you_should_already_know" class="nav-link"><li>What you should already know</li></a>
+               
+        <a href="C_and_C++"  class="nav-link"><li>C and C++</li></a>
+               
+         <a href="#Hello_world"  class="nav-link" >
+<li>Hello world</li></a>
+               
+         <a href="#Variables"  class="nav-link">
+<li>Variables</li></a>
+                    
+         <a href="#Declaring_variables"  class="nav-link"><li>Declaring variables</li></a>
+                    
+         <a href="#Variable_scope"  class="nav-link">
+<li>Variable scope</li></a>
+                    
+          <a href="#Global_variables" class="nav-link">
+ <li>Global variables</li></a>
+                    
+          <a class="nav-link" href="#Constants" rel="internal">
+ <li>Constants</li></a>
+                   
+          <a href="#Data_types"  class="nav-link">
+ <li>Data types</li></a>
+                               <ahref="#C++_Conditions_and_If_Statements"  class="nav-link"><li>C++ Conditions and If Statements</li></a>
+                    
+          <a href="#if...else_statement" class="nav-link"><li>if...else statement</li></a>
+                    
+          <a href="#while_statement"  class="nav-link"><li>while statement</li></a>
+           
+           <a href="#Function_declarations"  class="nav-link"><li>Function declarations</li></a>
+            
+            <a href="#Reference"  class="nav-link"><li>Reference</li></a>
+                
+               </ol>
+            </nav>
+
+            <main id="main-doc">
+                <section id="Introduction" class="main-section" >
+              <header>
+    <h2>Introduction</h2>
+             </header>
+             <article>
+           <p>
+             C++ is a cross-platform language that can be used to create high-performance applications.
+
+C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+               </p>
+
+<p>
+  C++ gives programmers a high level of control over system resources and memory.
+
+The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.
+               </p>
+
+                        <p>
+                          C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.
+               </p>
+
+<p>
+  Some of the features & key-points to note about the programming language are as follows:
+               </p>
+  <ol>
+      <li>Simple: It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich libray support and a variety of data-types.</li>
+      <li>Machine Independent but Platform Dependent: A C++ executable is not platform-independent (compiled programs on Linux won’t run on Windows), however they are machine independent.</li>
+       <li>Mid-level language: It is a mid-level language as we can do both systems-programming (drivers, kernels, networking etc.) and build large-scale user applications (Media Players, Photoshop, Game Engines etc.)</li>
+      <li>Rich library support: Has a rich library support (Both standard ~ built-in data structures, algorithms etc.) as well 3rd party libraries (e.g. Boost libraries) for fast and rapid development.</li>
+      <li>Speed of execution: C++ programs excel in execution speed. Since, it is a compiled language, and also hugely procedural. Newer languages have extra in-built default features such as grabage-collection, dynamic typing etc. which slow the execution of the program overall. Since there is no additional processing overhead like this in C++, it is blazing fast.</li>
+       <li>Pointer and direct Memory-Access: C++ provides pointer support which aids users to directly manipulate storage address. This helps in doing low-level programming (where one might need to have explicit control on the storage of variables).</li>
+      <li>Object-Oriented: One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs. i.e. Large-scale applications can be built. Procedural code becomes difficult to maintain as code-size grows.
+         <li>Compiled Language: C++ is a compiled language, contributing to its speed.</li>
+     </ol>        
+    </p>
+  </artice>
+</section>
+                <section id="What_you_should_already_know" class="main-section" >
+                    <header>
+                      <h2>What you should already know</h2>
+                        </header>
+                    <article>
+                        <p>This guide assumes you have the following basic background:</p>
+                      <p>
+       <ol>
+                        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                        <li>Good working knowledge of C Language.</li>
+                        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the page about C++.
+           </li>
+         </ol>
+                      </p>
+                      </artice>
+                </section>
+
+                <section id="C_and_C++" class="main-section" >
+                    <header>
+          <h2>C and C++</h2>
+      </header>
+   <article>
+                        <p>
+    Similarities between C and C++ are: 
+ </p>
+<ol>
+<li>Both the languages have a similar syntax.
+Code structure of both the languages are same.</li>
+<li>The compilation of both the languages is similar.</li>
+<li>They share the same basic syntax. Nearly all of C’s operators and keywords are also present in C++ and do the same thing.</li>
+<li>C++ has a slightly extended grammar than C, but the basic grammar is the same.
+Basic memory model of both is very close to the hardware.</li>
+<li>Same notions of stack, heap, file-scope and static variables are present in both the languages.</li>     
+     </ol>
+     <p>Difference between C and C++ are:  </p>
+                        <p>
+     The main difference between both these languages is C is a procedural programming language and does not support classes and objects, while C++ is a combination of both procedural and object-oriented programming languages.                       </p>
+                    </article>
+                </section>
+
+                <section id="Hello_world" class="main-section" >
+                    <header>
+                      <h2>Hello world</h2>
+                        </header>
+                    <article>
+                        To get started with writing C++, open the compiler you have and write your first "Hello world"
+                        C++
+                        code:
+                        <code>// Your First C++ Program
+
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+                        </code>
+
+                          <p> Now run the code in your compiler and see the output.</p>
+                    </article>
+                </section>
+                <section id="Variables" class="main-section">
+           <header>
+             <h2>Variables</h2>
+          </header>
+                    <p>
+                        You use variables as symbolic names for values in your application. The names of variables,called identifiers, conform to certain rules.
+                    </p>
+      <p>
+   The C++ identifier is a name used to identify a variable, function, class, module, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0 to 9).
+</p>
+          <p>
+C++ does not allow punctuation characters such as @, $, and % within identifiers. C++ is a case-sensitive programming language. Thus, Manpower and manpower are two different identifiers in C++.                    </p>
+<p>
+                       Some examples of legal names are:
+Piyush,
+abc,
+move_name,
+a_123,
+myname50,
+_temp,
+j,
+a23b9,retVal.
+     </p>
+
+                </section>
+             <section id="Declaring_variables" class="main-section">
+                    <header>
+             <h2>Declaring variables</h2>
+           </header>
+                    <article>
+                      <p> You can declare a variable in C++ like this: </p>
+      <p> With the keyword var. For example, </p>
+  <code>extern int d = 3, f = 5;    // declaration of d and f. 
+int d = 3, f = 5;           // definition and initializing d and f. 
+byte z = 22;                // definition and initializes z. 
+char x = 'x';               // the variable x has the value 'x'.
+   </code>                                    </article>
+</section>
+                  
+     <section id="Variable_scope" class="main-section">
+             <header>
+               <h2>Variable scope</h2>
+                 </header>
+                    <article>
+                        <p> When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function,it is called a local variable, because it is available only within that function.</p>
+<ol>
+         <li>Anything between ‘{‘ and ‘}’ is said to inside a block.</li>
+<li>Local variables do not exist outside the block in which they are declared, i.e. they can not be accessed or used outside that block.</li>
+<li>Declaring local variables: Local variables are declared inside a block.</li>
+                      </ol>                 
+  <code>   // CPP program to illustrate 
+// usage of local variables 
+#include  
+using namespace std; 
+
+void func() 
+{ 
+	/* this variable is local to the function func() and cannot be 
+accessed outside this function*/ 
+	int age=18;	 
+} 
+
+int main() 
+{ 
+	cout<<"Age is: "<< age; 
+	
+	return 0; 
+} 
+</code>           
+                    </article>
+                </section>
+                <section id="Global_variables" class="main-section">
+                 <header>
+          <h2>Global variables</h2>
+             </header>
+                    <article>
+                      <p>As the name suggests, Global Variables can be accessed from any part of the program.</p>
+  <ol>
+<li>They are available through out the life time of a program.</li>
+<li>They are declared at the top of the program outside all of the functions or blocks.</li>
+<li>Declaring global variables: Global variables are usually declared outside of all of the functions and blocks, at the top of the program. They can be accessed from any portion of the program.  </li>   </ol>     
+                      <code>
+   // CPP program to illustrate 
+// usage of global variables 
+#include<iostream> 
+using namespace std; 
+
+// global variable 
+int global = 5; 
+
+// global variable accessed from 
+// within a function 
+void display() 
+{ 
+	cout << global << endl; 
+} 
+
+// main function 
+int main() 
+{ 
+	display(); 
+	
+	// changing value of global 
+	// variable from main function 
+	global = 10; 
+	display(); 
+} 
+                       </code>
+                    </article>
+                </section>
+
+      <section id="Constants" class="main-section">
+         <header>
+           <h2>Constants</h2>
+   </header>
+                    <article>
+                        <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier
+                      </p>As the name suggests the name constants is given to such variables or values in C++ programming language which cannot be modified once they are defined.</p>
+                  <p>They are fixed values in a program. There can be any types of constants like integer, float, octal, hexadecimal, character constants etc. Every constant has some range
+  </p>                      
+      <p> Defining Constants:
+In C/C++ program we can define constants in two ways as shown below:</p>
+<p>1. Using #define preprocessor directive</p>
+<p>2. Using a const keyword  </p>                 
+  <p><b>1. Using #define preprocessor directive:</b> This directive is used to declare an alias name for existing variable or any value. We can use this to declare a constant as shown below:</p>
+<code>#define identifierName value</code>
+<p>identifierName: It is the name given to constant.</p>
+<p>value: This refers to any value assigned to identifierName.</p>
+                  <p><b>Example:</b>      </p>                    <code>#include <iostream> 
+using namespace std; 
+  
+#define val 10  
+#define floatVal 4.5  
+#define charVal 'G'  
+  
+int main() { 
+    cout << "Integer Constant: " << val << "\n";  
+    cout << "Floating point Constant: " << floatVal << "\n";  
+    cout << "Character Constant: "<< charVal << "\n";  
+      
+    return 0;  
+}           
+         </code>
+  <p> 2.<b>using a const keyword:</b> Using const keyword to define constants is as simple as defining variables, the difference is you will have to precede the definition with a <i>const</i> keyword.                
+ <code>
+   #include <iostream> 
+using namespace std; 
+   
+int main() { 
+    // int constant 
+    const int intVal = 10;  
+  
+    // Real constant 
+    const float floatVal = 4.14; 
+   
+    // char constant  
+    const char charVal = 'A';  
+  
+    // string constant 
+    const string stringVal = "ABC";  
+       
+    cout << "Integer Constant: " << intVal << "\n";  
+    cout << "Floating point Constant: " << floatVal << "\n";  
+    cout << "Character Constant: "<< charVal << "\n";  
+    cout << "String Constant: "<< stringVal << "\n"; 
+       
+    return 0;  
+} 
+   </code>
+                    </article>
+                </section>
+        
+    <section id="Data_types" class="main-section">
+     <header>
+       <h2>Data types</h2>
+      </header>
+        <article>
+                        <p>C++ offers the programmer a rich assortment of built-in as well as user defined data types. Following table lists down seven basic C++ data types and its keyword −
+</p>  
+          <ol>
+<li>Boolean: -	bool</li>
+<li>Character: -	char</li>
+<li>Integer: -	int</li>
+<li>Floating point: -	float</li>
+<li>Double floating point: -	double</li>
+<li>Valueless: -	void</li>
+<li>Wide character: -	wchar_t</li>                    </ol>
+</article>            </section>
+                
+<section id="C++_Conditions_and_If_Statements" class="main-section">
+      <header>
+   <h2>C++ Conditions and If Statements</h2>
+           </header>
+                    <article>  
+<p>  C++ supports the usual logical conditions from mathematics:</p>
+<ol>
+<li>Less than: a < b </li>
+<li>Less than or equal to: a <= b </li>
+<li>Greater than: a > b </li>
+<li>Greater than or equal to: a >= b
+<li>Equal to a == b </li>
+<li>Not Equal to: a != b </li>
+  </ol>
+<p>You can use these conditions to perform different actions for different decisions.</p>
+
+<p>C++ has the  following conditional statements:</p>
+<ol>
+<li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+<li>Use else to specify a block of code to be executed, if the same condition is false</li>
+<li>Use else if to specify a new condition to test, if the first condition is false</li>
+<li>Use switch to specify many alternative blocks of code to be executed </li>    </ol>           
+                  </article>
+                </section>
+         <section id="if...else_statement" class="main-section">
+           <header>
+             <h2>if...else statement</h2>
+</header>
+                    <article>
+    <p> Use the if statement to specify a block of C++ code to be executed if a condition is true.
+</p>
+<p>Syntax </p>          <code>if (condition) {
+  // block of code to be executed if the condition is true
+}
+</code>                <ol><li><b>Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.</b></li></ol>
+  <img class ="picture-of-if-else-condition" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-if-else-working.png" alt="picture of if else condition">                              </article>
+                </section>
+        
+        <section id="while_statement" class="main-section">
+         <header>
+           <h2>while statement</h2>
+     </header>
+                    <article>
+                        A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+<code>while (condition) {
+  // code block to be executed
+}</code>
+  If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+
+                        <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
+ <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+ </p>
+        Example:
+     <code>   int i = 0;
+while (i < 5) {
+  cout << i << "\n";
+  i++;
+} </code>             
+                    </article>
+                </section>
+                
+        <section id="Function_declarations" class="main-section">
+               <header>
+             <h2>Function Declaration</h2>
+                    </header>
+                    <article>
+    <p>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.</p>
+<p>
+The C++ standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.</p>
+<p>
+  A function is known with various names like a method or a sub-routine or a procedure etc. </p>                   
+<p><b> Defining a Function</b> </p>
+                       <code>return_type function_name( parameter list ) {
+   body of the function
+}</code>
+                        <p>A C++ function definition consists of a function header and a function body. Here are all the parts of a function −                   </p>
+ <ol><li><b> Return Type −</b> A function may return a value. The <b>return_type</b> is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword <b>void</b>.
+   </li>
+<li><b>Function Name</b> − This is the actual name of the function. The function name and the parameter list together constitute the function signature.
+</li>
+<li><b>Parameters</b> − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.
+</li>
+<li><b>Function Body</b> − The function body contains a collection of statements that define what the function does.
+</li>    </ol>                </article>
+                </section>
+     <section id="Reference" class="main-section">
+  <header>
+    <h2>Reference</h2>
+      </header>
+                    <article>
+        <p>All the contents of this documentation are taken from different websites through Google as </p>
+          <a href="https://www.geeksforgeeks.org/c-plus-plus/"
+               target="_blank">GeeksforGeeks</a>
+                          <a>, 
+                            <a href="https://www.w3schools.com/cpp/"
+                                target="_blank"> w3schools</a>
+                          <a>, <a
+                                href="https://www.tutorialspoint.com/cplusplus/index.htm"
+                                target="_blank">Tutorialspoint</a>
+                          <a>, <a
+                                href="https://www.programiz.com/cpp-programming"
+                                target="_blank">Programiz</a>
+                          <a>  etc.</a>
+                    </article>
+                </section>
+            </main>
+                          
+        </div>
+    </div>
+</div>
+                  </body>
